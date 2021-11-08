@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ventas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link href="https://file.myfontastic.com/UeNbDNg3uDru6TiywXn3oX/icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Mir<span>ian</span> Mu<span>rúa.</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">Inicio</a></li>
+                
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Proyecto Ventas en C# con SQLServer</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/Fig1PVtas.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Requerimientos Funcionales <span class="typing-2"></span></div>
+                    <p>La aplicación habilitar a los usuarios finales a:
+                        • Comprar, vender y actualizar los stocks de mercadería para los clientes que se encuentren
+                          en la base de datos. Además, se puede actualizar la misma mediante una interfaz
+                          gráfica que mantiene los datos apropiadamente
+                        • Agrega y borra clientes de la base de datos
+                        • Modificar los nombres y direcciones de los clientes, pero no así su número de documento
+                        • Consulta el precio actual de cualquier stock en la base de datos.</p><br> 
+		        <div class="text">Recursos del proyecto <span class="typing-2"></span></div>
+			    <p>Está provisto con los siguientes recursos para llevar a cabo el proyecto:
+                       • Un servidor en el cual está instalada la base de datos
+                       • Múltiples clientes que accederán a la misma con la aplicación con interfaz gráfica.                      
+                       • Un entorno de desarrollo para los programas</p><br> 
+		        <div class="text">Restricciones del proyecto <span class="typing-2"></span></div>
+			    <p>El primer paso en el proyecto es definir los requerimientos obtenidos en términos de los recursos
+                        y la tecnología disponible. Específicamente, debe aplicar restricciones para limitar la funcionalidad
+                        del proyecto a la tecnología disponible, recursos y límites de tiempo
+                       • Dadas las limitaciones de tiempo, las consultas a la base de datos deberán utilizar
+                         únicamente el número de documento, el cual es único o el ID único del stock
+                </p><br> 
+                     		     
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Arquitectura Proyecto Ventas</h2><br>      
+         
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Diseñando la arquitectura de Ventas</div>
+                    <p>Defino los participantes del patrón MVC y las clases de soporte
+                       necesarias para completar los requerimientos de manejo de cartera y stock.
+			           Crear los participantes del patrón MVC para los requerimientos de manejo de stock
+                        de la aplicación Ventas:
+                          a. Realice un bosquejo genérico de un diagrama de interacción de los
+                             participantes de MVC
+                          b. Liste la información encapsulada por el modelo para representar los objetos
+                             de stock
+                          c. Liste la información mostrada por pantalla por la vista para mostrar los
+                             objetos de stock
+                          d. Defini las páginas a mostrar por pantalla manejadas por la vista que se
+                             requieren para los objetos de stock
+                       Cree un bosquejo de cada página a mostrar por pantalla que este
+                       relacionada con el stock
+                       Identifique todos los controles del usuario (botones y demás) que se
+                       muestran por pantalla
+                          e. Defini los servicios soportados por la vista como interfaces. En este código
+                             inclui lo siguiente:
+                          i. El nombre de la interfaz
+                         ii. Los métodos de servicio para los requerimientos de registración de
+                             los controladores de listeners para las acciones del usuario
+                        iii. Los métodos de servicio para los comandos de mostrar página por
+                             pantalla pedido por el controlador
+                        iv. Los métodos de servicio para los eventos de cambio de estado
+                            generados por el modelo
+                         f. Defini los servicios soportados por el modelo como interfaces. En este
+                           código inclui lo siguiente:
+                         i. El nombre de la interfaz
+                        ii. Los métodos de servicio para los requerimientos de registración de
+                            listeners de cambio de estado del modelo por la vista
+                        iii. Los métodos de servicio para los comandos de cambio de estado
+                            generados por el controlador
+                         iv. Los métodos de servicio para requerimientos de consulta de estado
+                            del modelo realizados por la vista
+                          g. Defini los servicios soportados por el controlador como interfaces de .NET.
+                             En este código inclui lo siguiente
+                          i. El nombre de la interfaz 
+			  ii. Los métodos de servicio para los requerimientos de registración de
+                              listeners de cambio de estado del modelo por la vista
+                           h. Revise los participantes de MVC
+                           i. Verifique que el modelo de ventas provee métodos de acceso para
+                              toda la información que se mostrará por pantalla en las páginas
+                           ii. Verifique que le modelo de ventas provee métodos de negocio para
+                              cada acción que el usuario que genere un cambio de estado en el
+                              modelo
+                          iii. Verifique que cada interfaz provea los servicios requeridos por los
+                               otros dos participantes del patrón MVC
+                            i. Documente todos los tipos de datos
+                            i. Clases del dominio
+                           ii. Clases de excepción
+                          j. Si el tiempo lo permite, verificare la integridad de los objetos del dominio, las
+                             interfaces participantes del modelo MVC y los objetos de soporte.  
+                    </p><br>       
+
+                </div>
+                <div class="column right">
+                    <div class="galeria">
+                        <div class="contenedor">
+                            <article class="galeria__columna">
+                                <a href="img/1 Clases de la Construccion.jpg".jpg" data-lightbox="mygallery" data-title="Clases de la construcción"><img
+                                        src="img/1 Clases de la Construccion.jpg"alt=""style=""></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/2 Esquema DB Ventas.jpg" data-lightbox="mygallery" data-title="Esquema DB Ventas"><img src="img/2 Esquema DB Ventas.jpg"></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/3 Diag de Clases Modelo.jpg" data-lightbox="mygallery" data-title="Diagrama de Clases Modelo"><img src="img/3 Diag de Clases Modelo.jpg"></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/4 Modelo no Funcional.jpg" data-lightbox="mygallery" data-title="Modelo no Funcional"><img src="img/4 Modelo no Funcional.jpg"></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/5 Diag de Clases Paneles.jpg" data-lightbox="mygallery" data-title="Diagrama de Clases Paneles"><img src="img/5 Diag de Clases Paneles.jpg"></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/6 Diagrama Clases Formulario.jpg" data-lightbox="mygallery" data-title="Diagrama Clases Formulario"><img src="img/6 Diagrama Clases Formulario.jpg"></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/7 Diag Clases Vista Vtas.jpg" data-lightbox="mygallery" data-title="Diagrama Clases Vista Vtas"><img src="img/7 Diag Clases Vista Vtas.jpg"></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/8 Diag Clases MVC Paneles.jpg" data-lightbox="mygallery" data-title="Diagrama Clases MVC Paneles"><img src="img/8 Diag Clases MVC Paneles.jpg"></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/9 Diag Clases Controlador Vtas.jpg" data-lightbox="mygallery" data-title="Diagrama Clases Controlador Vtas"><img src="img/9 Diag Clases Controlador Vtas.jpg"alt=""style=""></a>
+                
+                            </article>
+                            <article class="galeria__columna">
+                                <a href="img/10 Diag Clases Aplicacion Vtas.jpg" data-lightbox="mygallery" data-title="Diagrama Clases Aplicacion Vtas"><img src="img/10 Diag Clases Aplicacion Vtas.jpg"></a>
+                
+                            </article>
+                        </div>
+			    
+                       
+                    </div>
+                </div>
+            </div>
+    </section>
+   
+      
+    <footer>
+        <span>Creado por <a href="">Mirian Murúa</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
+	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+	<script src="js/main2.js"></script>
+	<script src= "js/controles.js"></script> 
+    <script src="js/main.js"></script> 
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src= "js/particulas.js"></script> 
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
